@@ -13,6 +13,8 @@ services:
     extra_hosts:
       - "host.docker.internal:host-gateway"
     restart: always
+    networks:
+      - custom_network
 
   pipelines:
     image: sakenism/custom_pipelines
@@ -25,6 +27,12 @@ services:
     extra_hosts:
       - "host.docker.internal:host-gateway"
     restart: always
+    networks:
+      - custom_network
+
+networks:
+  custom_network:
+    driver: bridge
 
 volumes:
   open-webui:
