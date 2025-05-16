@@ -519,7 +519,7 @@
 				: [navigator.language || navigator.userLanguage];
 			const lang = backendConfig.default_locale
 				? backendConfig.default_locale
-				: bestMatchingLanguage(languages, browserLanguages, 'ru-request');
+				: bestMatchingLanguage(languages, browserLanguages, 'ru-RU');
 			changeLanguage(lang);
 		}
 
