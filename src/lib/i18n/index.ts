@@ -41,7 +41,7 @@ export const initI18n = (defaultLocale?: string | undefined) => {
 	let detectionOrder = defaultLocale
 		? ['querystring', 'localStorage']
 		: ['querystring', 'localStorage', 'navigator'];
-	let fallbackDefaultLocale = defaultLocale ? [defaultLocale] : ['ru-RU'];
+	let fallbackDefaultLocale = defaultLocale ? [defaultLocale] : ["ru-RU"];
 
 	const loadResource = (language: string, namespace: string) =>
 		import(`./locales/${language}/${namespace}.json`);
@@ -67,7 +67,8 @@ export const initI18n = (defaultLocale?: string | undefined) => {
 			}
 		});
 
-	const lang = i18next?.language || defaultLocale || 'ru-RU';
+	// const lang = i18next?.language || defaultLocale || 'ru-RU';
+	const lang = 'ru-RU';
 	document.documentElement.setAttribute('lang', lang);
 };
 
