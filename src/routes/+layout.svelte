@@ -504,6 +504,7 @@
 		let backendConfig = null;
 		try {
 			backendConfig = await getBackendConfig();
+			backendConfig["default_locale"] = "ru-RU"
 			console.log('Backend config:', backendConfig);
 		} catch (error) {
 			console.error('Error loading backend config:', error);

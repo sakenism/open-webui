@@ -67,8 +67,8 @@ export const initI18n = (defaultLocale?: string | undefined) => {
 			}
 		});
 
-	// const lang = i18next?.language || defaultLocale || 'ru-RU';
-	const lang = 'ru-RU';
+	const lang = i18next?.language || defaultLocale || 'ru-RU';
+	// const lang = 'ru-RU';
 	document.documentElement.setAttribute('lang', lang);
 };
 
