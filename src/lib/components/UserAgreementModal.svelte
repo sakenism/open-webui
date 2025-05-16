@@ -40,38 +40,42 @@
 
 	<div class="w-full p-4 px-5 text-gray-700 dark:text-gray-100">
 		<div
-			class="overflow-y-scroll max-h-96 scrollbar-hidden border dark:border-gray-700 p-3 rounded"
+			class="overflow-y-scroll max-h-96 scrollbar-hidden border dark:border-gray-700 p-3 rounded text-sm leading-6 space-y-3"
 		>
-			<div class="mb-3">
-				<h3 class="font-semibold mb-2">{$i18n.t('1. Introduction')}</h3>
-				<p class="text-sm mb-3">
+			<p>
+				<span class="font-bold text-lg">{$i18n.t('Dear user!')}</span>
+			</p>
+			<p>
+				{$i18n.t(
+					'As part of the integration of artificial intelligence technologies into work processes, please note the strict necessity to comply with information security requirements under the legislation of the Republic of Kazakhstan in this area, as well as regulatory legal acts approved by the Office of the Government of the Republic of Kazakhstan.'
+				)}
+			</p>
+			<p class="font-bold">{$i18n.t('Please note when using AI:')}</p>
+			<ul class="list-disc list-inside mb-3">
+				<li>
+					<span class="font-bold">{$i18n.t('It is prohibited to transmit')}</span>
+					{$i18n.t(' confidential, official, or personal information to AI systems.')}
+				</li>
+				<li>
 					{$i18n.t(
-						'Welcome to {{WEBUI_NAME}}. By accessing and using our services, you agree to be bound by these terms.',
-						{ WEBUI_NAME: $WEBUI_NAME }
+						'All actions must comply with regulatory acts on information security and legislation, including the Law of the Republic of Kazakhstan "On Personal Data and Their Protection".'
 					)}
-				</p>
-
-				<h3 class="font-semibold mb-2">{$i18n.t('2. User Responsibilities')}</h3>
-				<p class="text-sm mb-3">
+				</li>
+			</ul>
+			<p>
+				<span class="font-bold"
+					>{$i18n.t('Responsibility for compliance with these standards')}</span
+				>
+				{$i18n.t(' lies with each employee using AI in their professional activities.')}
+			</p>
+			<p>
+				<span class="text-yellow-500 text-lg">🔔</span>
+				<span class="text-gray-900 dark:text-gray-100">
 					{$i18n.t(
-						'Users are responsible for maintaining the confidentiality of their account information and for all activities that occur under their account.'
+						'Failure to comply with established requirements may result in disciplinary, administrative, and in some cases, criminal liability in accordance with applicable law.'
 					)}
-				</p>
-
-				<h3 class="font-semibold mb-2">{$i18n.t('3. Privacy Policy')}</h3>
-				<p class="text-sm mb-3">
-					{$i18n.t(
-						'Our privacy policy describes how we handle your personal data and protect your privacy when using our services.'
-					)}
-				</p>
-
-				<h3 class="font-semibold mb-2">{$i18n.t('4. Acceptable Use')}</h3>
-				<p class="text-sm mb-3">
-					{$i18n.t(
-						'Users must not use the service for any illegal purposes or to violate the rights of others. The service must not be used to distribute harmful content.'
-					)}
-				</p>
-			</div>
+				</span>
+			</p>
 		</div>
 	</div>
 </Modal>
