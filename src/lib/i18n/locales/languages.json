@@ -1,5 +1,9 @@
 [
 	{
+		"code": "ru-RU",
+		"title": "Russian (Russia)"
+	},
+	{
 		"code": "en-US",
 		"title": "English (US)"
 	},
@@ -142,10 +146,6 @@
 	{
 		"code": "ro-RO",
 		"title": "Romanian (Romania)"
-	},
-	{
-		"code": "ru-RU",
-		"title": "Russian (Russia)"
 	},
 	{
 		"code": "sr-RS",
