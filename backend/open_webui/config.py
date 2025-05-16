@@ -201,7 +201,6 @@ def save_config(config):
 
 T = TypeVar("T")
 
-
 class PersistentConfig(Generic[T]):
     def __init__(self, env_name: str, config_path: str, env_value: T):
         self.env_name = env_name
