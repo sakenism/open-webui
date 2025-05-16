@@ -811,7 +811,7 @@ export const promptTemplate = (
 		String(currentDate.getDate()).padStart(2, '0');
 
 	// Format the time to HH:MM:SS AM/PM
-	const currentTime = currentDate.toLocaleTimeString('en-US', {
+	const currentTime = currentDate.toLocaleTimeString('ru-RU', {
 		hour: 'numeric',
 		minute: 'numeric',
 		second: 'numeric',
