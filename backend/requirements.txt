@@ -132,3 +132,15 @@ opentelemetry-instrumentation-requests==0.51b0
 opentelemetry-instrumentation-logging==0.51b0
 opentelemetry-instrumentation-httpx==0.51b0
 opentelemetry-instrumentation-aiohttp-client==0.51b0
+
+# Kayir
+torch==2.1.2+cu118
+psycopg2==2.9.10
+python-dotenv==1.1.0
+langgraph==0.4.7
+langchain-core==0.3.60
+langchain-ollama==0.3.3
+FlagEmbedding==1.3.4
+openai==1.79.0
+sentence-transformers==4.1.0
+
